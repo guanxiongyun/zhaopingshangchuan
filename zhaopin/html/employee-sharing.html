@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>添加共享员工</title>
+</head>
+<link rel="stylesheet" href="../style/css/employee-sharing.css">
+<link rel="stylesheet" href="../style/css/init.css">
+<link rel="stylesheet" href="../style/css/mui.min.css">
+<link rel="stylesheet" href="../js/lib/src/time-plugins/mui.picker.min.css">
+<body>
+   <!-- 4-1-5添加共享员工 -->
+  <div class="box1">
+    <p>
+      <span>共享员工 </span> 
+      <img class="img1" src="../image/add-1.png">
+    </p>
+   
+  </div> 
+  <div class="box3-box1">
+    <h3>职位：电工  <span><img class="img1" src="../image/edit.png"> <img class="img2" src="../image/del.png">  </span></h3>
+    <p>空闲时间：周六周天</p>
+    <p>数量：2人</p>
+  </div>
+  
+  <div class="box3-box1">
+    <h3>职位：技术工  <span><img class="img1" src="../image/edit.png"> <img class="img2" src="../image/del.png">  </span></h3>
+    <p>空闲时间：周一</p>
+    <p>数量：2人</p>
+  </div>
+  <div class="box3-box1">
+    <h3>职位：木工  <span><img class="img1" src="../image/edit.png"> <img class="img2" src="../image/del.png">  </span></h3>
+    <p>空闲时间：周六</p>
+    <p>数量：2人</p>
+  </div>
+  <div class="box3-box1">
+    <h3>职位：电工  <span><img class="img1" src="../image/edit.png"> <img class="img2" src="../image/del.png">  </span></h3>
+    <p>空闲时间：周二周三周四</p>
+    <p>数量：2人</p>
+  </div>
+
+
+ <div class="time">
+    <div class="time-box">
+      <h2>添加共享员工</h2>
+      <p class="p1">
+        <span class="p-span1"> 职位类型</span>  <span class="p-span2">&nbsp; *</span> 
+        <input  type="text" value="" placeholder="请输入职位类型">
+        </p>
+     <p class="p1">
+     <span class="p-span1"> 职位名称</span>  <span class="p-span2">&nbsp; *</span> 
+     <input type="text" value="" placeholder="请输入职位名称">
+     </p>
+    
+     <p class="p1">
+      <span class="p-span1"> 职位名称</span>  <span class="p-span2">&nbsp; *</span> 
+      <span id='date'  class="btn mui-btn mui-btn-block ui-alert odd"> 
+        <span>5月6日</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;至&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>5月9日</span>
+       </span>
+      </p>
+          
+      <!-- <h3 class="mui-content">
+        <div class="mui-content-padded">
+          <button id='date' class="btn mui-btn mui-btn-block">选择日期 ...</button>
+          <div id='result'   class="ui-alert"></div>
+        </div>
+      </h3> -->
+  
+    
+      <p class="p1">
+        <span class="p-span1"> 人员数量</span>  <span class="p-span2">&nbsp; *</span> 
+        <input type="text" value="" placeholder="请输入人员数量">
+        </p>
+      <h4>
+        <span>确定</span>
+        <span class="guan">取消</span>
+        
+      </h4>
+    </div>
+  </div> 
+
+  <!-- <div id='result'   class="ui-alert"></div>  -->
+
+</body>
+
+<script scr="../js/lib/src/jquery-1.12.4.js"></script>
+<script src="../js/lib/rem.js"></script>
+<script src="../js/lib/src/mui.min.js"></script>
+<script src="../js/lib/src/time-plugins/mui.picker.min.js"></script>
+<script>
+
+  mui.init();
+			var btn = document.querySelector('#date');
+      var odd = document.querySelector('.odd');
+      var imglist = document.querySelectorAll(".img1");
+      var  tim =document.querySelector(".time");    
+     var  guan =document.querySelector(".guan");
+			var dtPicker = new mui.DtPicker({
+				type:'date'
+			}); 
+			// 监听日期选择点击事件
+			btn.addEventListener('tap', function() {
+				dtPicker.show(function (selectItems) { 
+          odd.innerHTML=selectItems.value;
+          
+				})
+			}, false);
+
+     //每个图片点击弹出
+      for(let i=0; i<imglist.length;i++){
+       imglist[i].onclick=function(){
+        console.log(tim) 
+        tim.style.display="block"
+       }
+      }
+      guan.onclick=function(){
+        tim.style.display="none"
+
+      }
+
+</script>
+</html>

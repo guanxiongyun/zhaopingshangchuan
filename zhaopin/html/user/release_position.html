@@ -1,0 +1,212 @@
+<!--
+ * @Description  : 发布职位
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发布职位</title>
+    <link rel="stylesheet" href="../../style/css/release_position.css">
+        <!-- 插件 -->
+        <link rel="stylesheet" href="../../style/plugins-css/scs.min.css">
+</head>
+<body>
+    <form action="">
+        <div class="city ipt-common">
+            <div class="text">
+                <div class="">所在城市<span>*</span></div>
+            </div>
+            <input type="text" readonly placeholder="" id="myAddrs" name="addr" data-key="1-36-37" value="北京 北京市 东城区" />
+            <img src="../../image/right.png" alt="">
+            <!-- <input type="text" value="" placeholder="湖北省武汉市江夏区">
+            <img src="../../image/right.png" alt=""> -->
+        </div>
+        <div class="position_name ipt-common2">
+            <div class="text">
+                <div class="">职位名称<span>*</span></div>
+            </div>
+            <input type="text" value="" placeholder="输入至少两个汉字的名称">
+        </div>
+        <div class="num ipt-common2">
+            <div class="recruit_text text">
+                <div class="">招聘人数<span>*</span></div>
+            </div>
+            <input type="text" value="" placeholder="只能输入数字">
+        </div>
+        <div class="pay_level ipt-common">
+            <div class="text">
+                <div class="">薪资水平<span>*</span></div>
+            </div>
+            <input type="text" value="" placeholder="1600-2500/月">
+            <img src="../../image/right.png" alt="">
+        </div>
+        <div class="closing_date ipt-common">
+            <div class="text">
+                <div class="">截止日期<span>*</span></div>
+            </div>
+            <input type="text" value="" placeholder="输入截止日期">
+            <img src="../../image/right.png" alt="">
+        </div>
+
+        <div class="welfare">
+            <div class="text">
+                <div class="welfare-text">福利</div>
+                <div class="num">(多选)</div>
+            </div>
+            <div class="checkbox-wrap">   
+                <input id="1" type="checkbox" class="checkbox" value="交通补贴1">
+                <label for="1">交通补贴</label>
+                <input id="2" type="checkbox" class="checkbox" value="交通补贴2">
+                <label for="2">交通补贴</label>
+                <input id="3" type="checkbox" class="checkbox" value="交通补贴3">
+                <label for="3">交通补贴</label>
+                <input id="4" type="checkbox" class="checkbox" value="交通补贴4">
+                <label for="4">交通补贴</label>
+            </div>
+        </div>
+        <div class="address ipt-common2">
+            <div class="text">
+                <div class="">工作地点<span>*</span></div>
+            </div>
+            <input type="text" value="" placeholder="输入至少两个字的工作地点">
+        </div>
+        <div class="class_position ipt-common">
+            <div class="text">
+                <div class="">职位分类<span>*</span></div>
+            </div>
+            <input type="text" value="" placeholder="选择分类">
+            <img src="../../image/right.png" alt="">
+        </div>
+        <div class="ipt-common">
+            <div class="text">
+                <div class="">学历要求<span>*</span></div>
+            </div>
+            <input type="text" value="" placeholder="选择学历">
+            <img src="../../image/right.png" alt="">
+        </div>
+        <div class="ipt-common">
+            <div class="text">
+                <div class="">工作年限<span>*</span></div>
+            </div>
+            <input type="text" value="" placeholder="选择年限">
+            <img src="../../image/right.png" alt="">
+        </div>
+        <div class="ipt-common">
+            <div class="text">
+                <div class="">职位类型<span>*</span></div>
+            </div>
+            <input type="text" value="" placeholder="选择类型">
+            <img src="../../image/right.png" alt="">
+        </div>
+
+        <!-- 选择兼职显示 -->
+        <div class="class">
+            <div class="text">
+                <div class="">结算方式<span>*</span></div>
+            </div>
+            <div class="gender-wrap">
+                <div class="nan">                 
+                    <input name="Fruit" id="nan" type="radio" class="ipt-gender"/>
+                    <label for="nan">日结</label>
+                    
+                </div>
+                <div class="nv">                   
+                    <input name="Fruit" id="nv" type="radio" class="ipt-gender"/>
+                    <label for="nv">月结</label>
+                </div>
+            </div>
+        </div>
+        <div class="working_hours">
+            <div class="text">
+                <div class="welfare-text">工作时间:</div>
+            </div>
+            <div class="checkbox-wrap">   
+                <input id="8" type="checkbox" class="checkbox2" value="星期1" checked>
+                <label for="8">星期1</label>
+                <input id="9" type="checkbox" class="checkbox2" value="星期2" checked>
+                <label for="9">星期2</label>
+                <input id="10" type="checkbox" class="checkbox2" value="星期3">
+                <label for="10">星期3</label>
+                <input id="11" type="checkbox" class="checkbox2" value="星期4">
+                <label for="11">星期4</label>
+                <input id="5" type="checkbox" class="checkbox2" value="星期5">
+                <label for="5">星期5</label>
+                <input id="6" type="checkbox" class="checkbox2" value="星期6">
+                <label for="6">星期6</label>
+                <input id="7" type="checkbox" class="checkbox2" value="星期天">
+                <label for="7">星期天</label>
+            </div>
+        </div>
+
+        
+        <div class="description">
+            <div class="text">
+                <div class="">职位简介</div>
+            </div>
+            <textarea name="" id=""  placeholder="2-500个汉字"></textarea>
+        </div>
+        <div class="ipt-common2">
+            <div class="text">
+                <div class="">企业名称<span>*</span></div>
+            </div>
+            <input type="text" value="" placeholder="输入至少四个汉字">
+        </div>
+        <div class="ipt-common">
+            <div class="text">
+                <div class="">所属行业<span>*</span></div>
+            </div>
+            <input type="text" value="" placeholder="选择行业">
+            <img src="../../image/right.png" alt="">
+        </div>
+        <div class="ipt-common2">
+            <div class="text">
+                <div class="">联系人<span>*</span></div>
+            </div>
+            <input type="text" value="" placeholder="输入至少一个汉字">
+        </div>
+        <div class="ipt-common2">
+            <div class="text">
+                <div class="">联系电话<span>*</span></div>
+            </div>
+            <input type="text" value="" placeholder="必须是手机号码/固话">
+        </div>
+
+        <div class="submit">
+            <input type="submit" id="submit" value="发布">
+        </div>
+    </form>
+    
+</body>
+<script src="../../js/lib/rem.js"></script>
+<!-- <script src="../../js/lib/src/common.js"></script> -->
+<script src="../../js/lib/src/user/resume.js"></script>
+<!-- 插件 -->
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="../../js/lib/src/plugins-js/jquery.scs.min.js"></script>
+<script src="../../js/lib/src/plugins-js/CNAddrArr.min.js"></script>
+<script>
+
+          // 获取复选框的值
+          document.getElementById("submit").onclick = function(){
+            var checkboxArr = [];
+            var checkbox = document.getElementsByClassName("checkbox");
+            for(var i = 0;i<checkbox.length;i++){
+                if(checkbox[i].checked){
+                    checkboxArr.push(checkbox[i].value);
+                }
+            }
+
+            var checkboxArr2 = [];
+            var checkbox2 = document.getElementsByClassName("checkbox2");
+            for(var i = 0;i<checkbox2.length;i++){
+                if(checkbox2[i].checked){
+                    checkboxArr2.push(checkbox2[i].value);
+                }
+            }
+            console.log(checkboxArr)
+            console.log(checkboxArr2)
+            return false
+        }
+</script>
+</html>

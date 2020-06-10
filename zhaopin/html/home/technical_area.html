@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技工专区</title>
+    <link rel="stylesheet" href="../../style/css/technical_area.css">
+</head>
+<body>
+    <!-- 搜索 -->
+    <div class="search">
+        <div class="icon"></div>
+        <input type="text" placeholder="找全职 找兼职 搜索职位">
+    </div>
+
+    <div class="select-wrap">
+        <div class="select" id="select">
+            <div class="item" onclick="showBox(0)">
+                <div class="select-text text">职位</div>
+                <img class="select-img" src="../../image/icon_join_bottom.png" alt="">
+            </div>
+            <div class="item" onclick="showBox(1)">
+                <div class="select-text text">地区</div>
+                <img class="select-img" src="../../image/icon_join_bottom.png" alt="">
+            </div>
+            <div class="item" onclick="showBox(2)">
+                <div class="select-text text">月薪</div>
+                <img class="select-img" src="../../image/icon_join_bottom.png" alt="">
+            </div>
+            <div class="item" onclick="showMore(3)">
+                <div class="select-text text">更多</div>
+                <img class="select-img sel" src="../../image/sel.png" alt="">
+            </div>
+        </div>
+
+        <!-- showBox -->
+        <div class="select-box" id="select-box">
+            <div class="box1" id="box1">
+                <div class="box1-item">不限</div>
+                <div class="box1-item">房地产</div>
+                <div class="box1-item">机械</div>
+                <div class="box1-item">工厂</div>
+                <div class="box1-item">电子/通信</div>
+                <div class="box1-item">其它</div>
+            </div>
+            <div class="box2" id="box2">
+                <div class="box2-item">不限</div>
+                <div class="box2-item">不限</div>
+                <div class="box2-item">不限不限不限不限</div>
+                <div class="box2-item">不限</div>
+                <div class="box2-item">不限</div>
+                <div class="box2-item">不限</div>
+                <div class="box2-item">不限</div>
+                <div class="box2-item">不限不限不限不限</div>
+                <div class="box2-item">不限</div>
+                <div class="box2-item">不限</div>
+            </div>
+        </div>
+        <!-- moreBox -->
+        <div class="select-box2" id="select-box2" style="background-color: #ffffff;width: 100%;">
+                    <div class="checkbox">
+                <div class="text">
+                    <div class="advantage-text">个人亮点</div>
+                </div>
+                <div class="checkbox-wrap">   
+                    <input id="5" type="checkbox" class="checkbox" value="交通补贴1">
+                    <label for="5">交通补贴</label>
+                    <input id="6" type="checkbox" class="checkbox" value="交通补贴2">
+                    <label for="6">交通补贴</label>
+                    <input id="7" type="checkbox" class="checkbox" value="交通补贴3">
+                    <label for="7">交通补贴</label>
+                    <input id="8" type="checkbox" class="checkbox" value="交通补贴4">
+                    <label for="8">交通补贴</label>
+                </div>
+            </div>
+
+            <div style="width: 1.94rem;height: 0.8rem;line-height: 0.8rem;text-align: center;
+             font-size: 0.3rem;margin: 0.3rem auto;background:linear-gradient(135deg,rgba(116,192,243,1),rgba(70,175,245,1));
+             border-radius: 25px;color: #ffffff;"
+             onclick="confirm()">确认</div>
+
+        </div>
+
+    </div>
+
+    <div class="list">
+        <div class="item">
+            <div class="top">
+                <img src="" alt="">
+                <div class="text">
+                    <div class="money">
+                        <span>门店营业员</span>
+                        <span class="money-num"> <span>￥</span> 3500-4000/月</span>
+                    </div>
+                    <div class="address">
+                        <img src="../../image/company.png" alt="">
+                        <div class="address-text">服饰店</div>
+                    </div>
+                    <div class="evaluate">
+                        <div class="evaluate-item">待遇好</div>
+                        <div class="evaluate-item">长白班</div>
+                        <div class="evaluate-item">加班补助</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="time">
+                    <span>最后更新</span><span>2020-04-29 14：26</span>
+                </div>
+                <div class="look">
+                    <span>33</span><span>人浏览</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="select-box-mask" id="select-box-mask"></div>
+</body>
+<script src="../../js/lib/rem.js"></script>
+<script src="../../js/lib/src/common.js"></script>
+</html>
